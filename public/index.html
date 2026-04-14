@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="dashboard-header">
+      <h1>Student Management Dashboard</h1>
+      <p>Manage students easily with database support</p>
+    </div>
+
+    <div class="top-bar">
+      <div class="welcome-box" id="welcomeText">Welcome, Admin</div>
+      <button id="logoutBtn" class="logout-btn" type="button">Logout</button>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card students-card">
+        <h3>🎓 Total Students</h3>
+        <p id="totalStudents">0</p>
+      </div>
+
+      <div class="stat-card courses-card">
+        <h3>📚 Total Courses</h3>
+        <p id="totalCourses">0</p>
+      </div>
+    </div>
+
+    <div class="main-card">
+      <h2 class="section-title">Add / Update Student</h2>
+
+      <div class="form-grid">
+        <input id="name" class="input-field" type="text" placeholder="Full Name" />
+        <input id="age" class="input-field" type="number" placeholder="Age" />
+        <input id="course" class="input-field" type="text" placeholder="Course" />
+        <input id="phone" class="input-field" type="text" placeholder="Phone" />
+        <input id="email" class="input-field" type="email" placeholder="Email" />
+      </div>
+
+      <div class="button-group">
+        <button id="addBtn" class="add-btn" type="button">Add Student</button>
+        <button id="updateBtn" class="update-btn" type="button">Update</button>
+        <button id="clearBtn" class="clear-btn" type="button">Clear</button>
+      </div>
+
+      <h2 class="section-title">Student Records</h2>
+
+      <div class="search-row">
+        <input id="searchInput" class="input-field" type="text" placeholder="Search by name, course, phone, email..." />
+        <button id="searchBtn" class="search-btn" type="button">Search</button>
+        <button id="showBtn" class="show-btn" type="button">Show All</button>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="student-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Course</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="studentTable">
+            <tr>
+              <td colspan="7" class="empty-state">No students yet</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

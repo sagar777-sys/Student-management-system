@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Student Management</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-left">
+      <h1>🎓 Student System</h1>
+      <p>Login with your registered email ID or phone number</p>
+    </div>
+
+    <div class="auth-right">
+      <div class="auth-card">
+        <h2>Welcome Back 👋</h2>
+        <p>Login to continue</p>
+
+        <input type="text" id="loginId" placeholder="Email or Phone Number" />
+
+        <div class="password-wrap">
+          <input type="password" id="password" placeholder="Password" />
+          <button type="button" id="togglePassword" class="small-btn">Show</button>
+        </div>
+
+        <button id="loginBtn" type="button">Login</button>
+
+        <p class="switch-link">
+          Don't have an account?
+          <a href="register.html">Register here</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

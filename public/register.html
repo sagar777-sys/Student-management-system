@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - Student Management</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-left">
+      <h1>✨ Create Account</h1>
+      <p>Register with your name, email, phone number and password</p>
+    </div>
+
+    <div class="auth-right">
+      <div class="auth-card">
+        <h2>Register</h2>
+        <p>Create your account</p>
+
+        <input type="text" id="fullName" placeholder="Full Name" />
+        <input type="email" id="email" placeholder="Email Address" />
+        <input type="text" id="phone" placeholder="Phone Number" />
+
+        <div class="password-wrap">
+          <input type="password" id="password" placeholder="Password" />
+          <button type="button" id="togglePassword" class="small-btn">Show</button>
+        </div>
+
+        <button id="registerBtn" type="button">Register</button>
+
+        <p class="switch-link">
+          Already have an account?
+          <a href="login.html">Login here</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="register.js"></script>
+</body>
+</html>
